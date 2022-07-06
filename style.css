@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #E5E5E5;
+}
+
+.header_container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header_logo_img {
+    max-width: 112px;
+    margin-right: 100px;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    
+}
+
+.header_list {
+    display: flex;
+}
+
+.header_link {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1D1F2E;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.header_link:last-of-type {
+    margin-right: 0;
+}
+
+.item-img {
+    padding-left: 20px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.header_cart {
+    display: flex;
+    align-items: center;
+}
+
+.header_cart_img {
+    margin-right: 10px;
+}
+
+/*Main*/
+
+.hero {
+    background-color: #050827;
+    height: 530px;
+}
+
+.hero_background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 530px;
+    background: url('./img7/h1.png') no-repeat;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla';
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.text_h1 {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.text_h2 {
+    font-size: 47px;
+    line-height: 60px;
+    padding-bottom: 20px;
+}
+
+.text_p {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.search-form_submit_2 {
+    padding: 2px 24px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1D1F2E;
+    background: #FFFFFF;
+    max-width: 230px;
+    border: 0;
+}
+
+/*2*/
+
+.container_text {
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.text_h3 {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #1D1F2E;
+    max-width: 580px;
+    padding-bottom: 20px;
+}
+
+.text_p2 {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(29, 31, 46, 0.7);
+    max-width: 660px;
+    padding-bottom: 20px;
+}
+
+.text_a {
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #A25F4B;
+    max-width: 130px;
+    border: 0;
+}
+
+/*3*/
+
+.container_img_two {
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.img_two {
+    display: grid;
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    background: #E5E5E5;
+}
+
+.img_two_text {
+    display: grid;
+    grid-template-columns: repeat(2, 460px);
+    column-gap: 20px;
+    row-gap: 57px;
+    margin-top: 100px;
+}
+
+.text_img_two {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1D1F2E;
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+/*4*/
+
+.img_two_text_tree {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 20px;
+    row-gap: 57px;
+    margin-top: 100px;
+}
+
+.text_img_two_4 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1D1F2E;
+    padding-top: 25px;
+    /*padding-bottom: 100px;*/
+}
+
+.text_img_two_USD {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1D1F2E;
+    padding: 0;
+    margin: 0;
+}
+
+.text_h1_two {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+/*5*/
+
+.container_text_two {
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 100px; 
+}
+
+.b3 {
+    padding-top: 100px;
+    width: 100%;
+}
+
+/*6*/
+
+.text_img_two_5 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #1D1F2E;
+    max-width: 300px;
+    padding-top: 25px;
+}
+
+.text_img_two_6 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+    text-align: center;
+    max-width: 290px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.text_img_two_7 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D1F2E;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #1D1F2E;
+}
+
+.container {
+    align-items: center;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.footer_logo {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.row_space-between {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.footer-copyright-desc {
+    max-width: 260px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(250, 250, 253, 0.7);
+    padding-bottom: 80px;
+}
+.footer-copyright-terms {
+    margin-top: auto;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(250, 250, 253, 0.7);
+}
+
+.footer-nav-wrapper {
+    display: flex;  
+    justify-content: flex-end;
+}
+
+.footer-nav + .footer-nav {
+    margin-left: 80px;
+}
+
+.footer-nav {
+    max-width: 200px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer-nav-title {
+    margin-bottom: 24px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.footer-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-top: -16px;
+}
+
+.footer-nav li {
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+}
+
+.footer-nav a {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
